@@ -1,4 +1,4 @@
-package adeo.leroymerlin.cdp;
+package adeo.leroymerlin.cdp.infrastructure;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,6 +12,17 @@ public class Member {
     private Long id;
 
     String name;
+
+    public Member() {}
+
+    public Member(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Long getId() {
+        return id;
+    }
 
     public String getName() {
         return name;
