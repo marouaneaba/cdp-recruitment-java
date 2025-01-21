@@ -88,3 +88,5 @@ Team overall appreciation will be based on:
 - Code readability, structure and consistency
 - Tests, how they are written
 - Bonus: usage of Functional concepts
+
+

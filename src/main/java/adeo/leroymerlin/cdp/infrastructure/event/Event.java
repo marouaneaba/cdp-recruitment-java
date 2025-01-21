@@ -1,6 +1,8 @@
-package adeo.leroymerlin.cdp;
+package adeo.leroymerlin.cdp.infrastructure.event;
 
+import adeo.leroymerlin.cdp.infrastructure.Band;
 import jakarta.persistence.*;
+
 import java.util.Set;
 
 @Entity
@@ -19,6 +21,17 @@ public class Event {
     private Integer nbStars;
 
     private String comment;
+
+    public Event() {}
+
+    public Event(Long id, String title, String imgUrl, Set<Band> bands, Integer nbStars, String comment) {
+        this.id = id;
+        this.title = title;
+        this.imgUrl = imgUrl;
+        this.bands = bands;
+        this.nbStars = nbStars;
+        this.comment = comment;
+    }
 
     public Long getId() {
         return id;
